@@ -1,0 +1,16 @@
+#!/bin/bash
+set -v
+java PassFailDistinction 100
+java PassFailDistinction 70
+java PassFailDistinction 69.9999
+java PassFailDistinction 60
+java PassFailDistinction 50.9999
+java PassFailDistinction 50
+java PassFailDistinction 49.9999
+java PassFailDistinction 40
+java PassFailDistinction 0
+java PassFailDistinction -40
+java PassFailDistinction -50
+java PassFailDistinction -70
+java PassFailDistinction -69
+java PassFailDistinction -100

@@ -1,0 +1,9 @@
+#!/bin/bash
+set -v
+java DivideCake4 1 2 3 4
+java DivideCake4 2 2 4 8
+java DivideCake4 2 2 2 2
+java DivideCake4 2 4 8 16849462
+java DivideCake4 16846452 468462 498462 1333452
+java DivideCake4 0 0 0 0
+java DivideCake4 1 1 1 168

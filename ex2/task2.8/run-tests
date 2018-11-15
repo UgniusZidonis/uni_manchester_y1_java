@@ -1,0 +1,3 @@
+#!/bin/bash
+set -v
+java Birthday "Ugnius" "Zidonis" "2000-03-31"

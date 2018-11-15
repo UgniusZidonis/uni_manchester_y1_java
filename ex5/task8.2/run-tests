@@ -1,0 +1,5 @@
+#!/bin/bash
+set -v
+java WorkFuture2 2018 2000 2017
+java WorkFuture2 2018 1957 485
+java WorkFuture2 2068 2000 2001

@@ -1,0 +1,10 @@
+#!/bin/bash
+set -v
+java RoundPennies 1651
+java RoundPennies 0
+java RoundPennies 549
+java RoundPennies 550
+java RoundPennies 600
+java RoundPennies -1
+java RoundPennies -549
+java RoundPennies -550

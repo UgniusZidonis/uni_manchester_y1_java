@@ -1,0 +1,5 @@
+#!/bin/bash
+set -v
+java FishTankMaterials 12 2 4
+java FishTankMaterials -4 0 4
+java FishTankMaterials "Hello"

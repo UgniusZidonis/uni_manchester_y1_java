@@ -1,0 +1,17 @@
+#!/bin/bash
+set -v
+java LargestSquare 0
+java LargestSquare 1
+java LargestSquare 2
+java LargestSquare 3
+java LargestSquare 4
+java LargestSquare 6
+java LargestSquare 9
+java LargestSquare 168
+java LargestSquare 169
+java LargestSquare 170
+java LargestSquare 224
+java LargestSquare 225
+java LargestSquare 226
+java LargestSquare 230
+

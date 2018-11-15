@@ -1,0 +1,5 @@
+#!/bin/bash
+set -v
+java FieldPerimeter 12 65
+java FieldPerimeter -5 0
+java FieldPerimeter "Hello"
