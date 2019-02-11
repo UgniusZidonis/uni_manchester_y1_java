@@ -1,0 +1,33 @@
+#!/bin/bash
+set -v
+java MarkAnalysis << EOI
+0
+EOI
+java MarkAnalysis << EOI
+8
+4
+5
+9
+8
+9
+10
+5
+9
+EOI
+java MarkAnalysis << EOI
+2
+0
+10
+EOI
+java MarkAnalysis << EOI
+6
+5
+-4
+-3
+3
+4
+8
+-44
+9
+5
+EOI

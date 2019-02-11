@@ -18,23 +18,8 @@ public class AddQuadPoly
                              firstPoly.c + secondPoly.c);
 
     // Printing results
-    System.out.printf("Polynomial: %s\n", FormatPoly(firstPoly));
-    System.out.printf("Added to:   %s\n", FormatPoly(secondPoly));
-    System.out.printf("Results in: %s\n", FormatPoly(thirdPoly));
-  }
-
-  private static String FormatPoly(QuadPoly polynomial)
-  {
-    // Formatting to differentiate between + and - when printing
-
-    // a coefficient
-    String firstPart = String.format("%.1fx^2", polynomial.a);
-    // b coefficient
-    String secondPart = " " + (polynomial.b >= 0 ? "+" : "-") + 
-                        " " + Math.abs(polynomial.b) + "x";
-    // c coefficient
-    String thirdPart = " " + (polynomial.c >= 0 ? "+" : "-") + 
-                       " " + Math.abs(polynomial.c);
-    return String.format(firstPart + secondPart + thirdPart);
+    System.out.printf("Polynomial: %s\n", firstPoly.toString());
+    System.out.printf("Added to:   %s\n", secondPoly.toString());
+    System.out.printf("Results in: %s\n", thirdPoly.toString());
   }
 }

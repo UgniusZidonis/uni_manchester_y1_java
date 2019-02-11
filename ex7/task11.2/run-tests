@@ -1,0 +1,90 @@
+#!/bin/bash
+set -v
+java ShapeShift << EOI
+0
+EOI
+java ShapeShift << EOI
+4
+EOI
+java ShapeShift << EOI
+1
+0 0
+1
+0 0
+EOI
+java ShapeShift << EOI
+1
+0 0
+5
+1 2
+EOI
+java ShapeShift << EOI
+1
+0 0
+-5
+-1 -2
+EOI
+java ShapeShift << EOI
+1
+1 2
+-5
+-1 -2
+EOI
+java ShapeShift << EOI
+2
+0 0
+0 0
+0 0
+0 0
+EOI
+java ShapeShift << EOI
+2
+0 0
+1 0
+0 1
+0 0
+EOI
+java ShapeShift << EOI
+2
+0 0
+1 0
+0 1
+5 5
+EOI
+java ShapeShift << EOI
+2
+-5 0
+5 0
+0 10
+5 -10
+EOI
+java ShapeShift << EOI
+3
+0 0
+0 0
+0 0
+EOI
+java ShapeShift << EOI
+3
+0 0
+1 1
+0 0
+EOI
+java ShapeShift << EOI
+3
+0 0
+1 1
+-1 -1
+EOI
+java ShapeShift << EOI
+3
+0 0
+5 2
+-5 2
+EOI
+java ShapeShift << EOI
+3
+0 0
+5 2
+-5 -2
+EOI

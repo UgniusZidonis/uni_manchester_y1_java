@@ -1,0 +1,18 @@
+#!/bin/bash
+set -v
+java MarkAnalysis << EOI
+0
+EOI
+java MarkAnalysis << EOI
+5
+Abc
+5
+Acb
+5
+Aac
+5
+Kugel
+7
+Mugel
+3
+EOI

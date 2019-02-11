@@ -1,4 +1,4 @@
-public class AddQuadPoly
+public class CompareQuadPoly
 {
   public static void main(String[] args)
   {
@@ -13,14 +13,19 @@ public class AddQuadPoly
     QuadPoly firstPoly, secondPoly, thirdPoly;
     firstPoly = new QuadPoly(firstCofA, firstCofB, firstCofC);
     secondPoly = new QuadPoly(secondCofA, secondCofB, secondCofC);
-    thirdPoly = new QuadPoly(firstPoly.a + secondPoly.a,
-                             firstPoly.b + secondPoly.b,
-                             firstPoly.c + secondPoly.c);
 
     // Printing results
-    System.out.printf("Polynomial: %s\n", FormatPoly(firstPoly));
-    System.out.printf("Added to:   %s\n", FormatPoly(secondPoly));
-    System.out.printf("Results in: %s\n", FormatPoly(thirdPoly));
+    System.out.printf("Polynomial:      %s\n", FormatPoly(firstPoly));
+    System.out.printf("%s: %s\n", Answer(firstPoly, secondPoly), 
+                                    FormatPoly(secondPoly));
+  }
+
+  private static String Answer(QuadPoly first, QuadPoly second)
+  {
+    // Formatting answer
+    return first.equals(second) ?   "    is equal to" : 
+           first.lessThan(second) ? "   is less than" :
+                                    "is greater than";
   }
 
   private static String FormatPoly(QuadPoly polynomial)
